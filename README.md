@@ -2,9 +2,9 @@
 
 The repository contains a number of Makefile templates for various repositories.
 
-## Types of Makefiles
+## Templates
 
-`makefile` - A base template for a single repository.
-`python.mk` - A Python project template.
-`secrets.mk` - A secrets management template.
-`google.mk` - A Google Cloud Platform template.
+- `makefile` - Base makefile template.
+- `python.mk` - Python project template.
+- `secrets.mk` - Secrets management template.
+- `google.mk` - Google Cloud Platform template.
