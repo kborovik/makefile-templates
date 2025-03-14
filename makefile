@@ -41,7 +41,7 @@ help:
 	echo "$(blue)Usage: $(green)make [recipe]$(reset)"
 	echo "$(blue)Recipes:$(reset)"
 	awk 'BEGIN {FS = ":.*?## "; sort_cmd = "sort"} /^[a-zA-Z0-9_-]+:.*?## / \
-	{ printf "  \033[33m%-10s\033[0m %s\n", $$1, $$2 | sort_cmd; } \
+	{ printf "  \033[33m%-15s\033[0m %s\n", $$1, $$2 | sort_cmd; } \
 	END {close(sort_cmd)}' $(MAKEFILE_LIST)
 
 prompt:
